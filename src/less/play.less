@@ -1,0 +1,101 @@
+.ant-spin {
+    display: block;
+    padding-top: 20px;
+}
+
+.detail-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px;
+}
+
+.detail-container {
+    text-align: center;
+}
+
+.lyric-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    margin-top: 15px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        transition: top .5s;
+        width: 100%;
+
+        li {
+            transition: color .5s;
+            height: 25px;
+        }
+
+        .lyric-active {
+            color: #1170d7;
+            font-size: 16px;
+        }
+    }
+}
+
+.img-container {
+    text-align: center;
+
+    img {
+        width: 300px;
+    }
+}
+
+.ant-layout-footer.play-control {
+    display: flex;
+    align-items: center;
+
+    &>button {
+        margin: 15px;
+    }
+}
+
+.progress-btn-container {
+    position: relative;
+    width: 500px;
+    height: 32px;
+    margin: 15px;
+
+    progress {
+        width: 100%;
+        height: 5px;
+        vertical-align: baseline;
+
+        color: #40a9ff;
+        /*兼容IE10的已完成进度背景*/
+        border: none;
+        background: #d7d7d7;
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 5px;
+
+        /*这个属性也可当作Chrome的已完成进度背景，只不过被下面的::progress-bar覆盖了*/
+        &::-webkit-progress-bar {
+            background-color: #d7d7d7;
+        }
+
+        &::-webkit-progress-value,
+        &::-moz-progress-bar {
+            background-color: #40a9ff;
+            border-radius: 5px;
+        }
+    }
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border-width: 0;
+        padding: 0;
+        background-color: #84b7e0;
+        top: 10.5px;
+    }
+
+}

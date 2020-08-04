@@ -1,0 +1,36 @@
+.search-container {
+    padding: 20px;
+    overflow: auto;
+
+
+
+    .search-table {
+        max-width: 960px;
+        margin: 0 auto;
+
+        .search-table-artists,
+        .search-table-album {
+            width: 200px;
+        }
+
+        .play-link:not(.play-link-disabled):hover {
+            color: #1890ff;
+        }
+
+        .play-link-disabled {
+            color: #aaa;
+            cursor: default;
+        }
+
+
+    }
+
+    .search-input-container {
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+        .ant-select {
+            min-width: 100px;
+        }
+    }
+}

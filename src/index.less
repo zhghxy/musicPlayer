@@ -1,0 +1,54 @@
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+
+  &>.ant-layout {
+    height: 100%;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.65)
+  }
+}
+
+
+
+button:focus {
+  outline: none
+}
+
+.ant-btn {
+  &:focus {
+    color: rgba(0, 0, 0, 0.65) !important;
+    border-color: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  &:hover {
+    color: #40a9ff !important;
+    //background: #fff;
+    border-color: #40a9ff !important;
+  }
+}
+
+.ant-layout-header {
+  color: rgba(200, 200, 200, 1);
+}
